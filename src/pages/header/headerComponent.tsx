@@ -2,6 +2,7 @@ import React from "react"
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import { HeaderButton } from '../../components/headerButton'
+import { HeaderComponentProps } from "./types";
 
 
 const useStyles = makeStyles(({ palette }) => createStyles({
@@ -12,7 +13,7 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         width: "100vw",
         height: "40px",
         borderBottom: `3px solid ${palette.primary.dark}`,
-        fontFamily: "Comic Sans MS"
+        zIndex: 30
     },
     buttons: {
         width: "70vw",
@@ -26,36 +27,37 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         top: "3px",
         left: "60px",
         color: palette.primary.dark,
-        fontFamily: "Comic Sans MS"
+        fontSize: "30px",
+        fontFamily: "Candara"
     },
     matrix: {
         width: "100vw",
-        height: "300px",
-        borderBottom: `3px solid ${palette.primary.dark}`,
-        borderBottomLeftRadius: "40px",
-        borderBottomRightRadius: "40px",
+        height: "450px",
+        borderBottom: `5px solid ${palette.primary.main}`,
+        borderBottomLeftRadius: "70px",
+        borderBottomRightRadius: "70px",
     },
     title: {
         position: "absolute",
         left: "50%",
         transform: "translate(-50%, 0)",
-        top: "110px",
+        top: "200px",
         margin: "0 auto",
-        color: palette.primary.dark,
-        fontFamily: "Georgia",
-        fontSize: "70px"
+        color: palette.primary.main,
+        fontSize: "90px",
+        fontFamily: "Candara"
     }
 }));
 
 const buttonsNames = ["About me", "My skills", "My projekts", "Contact"]
 
-export const HeaderComponent = () => {
+export const HeaderComponent: React.FC<HeaderComponentProps> = () => {
     const classes = useStyles();
 
     return (
         <>
             <div className={classes.header}>
-                <h2 className={classes.paragraph}> PORTFOLIO PAGE </h2>
+                <p className={classes.paragraph}> PORTFOLIO PAGE </p>
                 <div className={classes.buttons}>
                     {
                         buttonsNames.map((item, index) =>
