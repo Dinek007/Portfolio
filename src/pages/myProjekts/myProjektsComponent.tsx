@@ -1,7 +1,7 @@
 import React from "react"
 import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { ProjektElement } from '../../components/projektElement'
 
+import { ProjektElement } from '../../components/projektElement'
 import { MyProjektsComponentProps } from "./types";
 
 
@@ -29,7 +29,6 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         height: "1400px",
         top: "150px",
     }
-
 }));
 
 
