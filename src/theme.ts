@@ -1,7 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
 
 export const colors = {
-    green: '#77bb00',
+    green: '#99aa00',
     grey: "#333333"
 }
 
