@@ -11,8 +11,7 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         position: "relative",
         width: "100vw",
         top: "-350px",
-        height: "1900px",
-        zIndex: -3
+        height: "1700px",
     },
     title: {
         position: "relative",

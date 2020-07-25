@@ -9,7 +9,7 @@ const useStyles = makeStyles(({ palette }) => createStyles({
     projekt: {
         marginLeft: "0px",
         textAlign: "center",
-        color: palette.primary.main,
+
         width: "50%",
         height: "500px",
         borderRadius: "0",
@@ -23,20 +23,33 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         borderRadius: "70px",
     },
     link: {
-        backgroundColor: "aqua",
-        width: "20%",
+        backgroundColor: palette.secondary.main,
+        color: palette.primary.light,
+        width: "205px",
         position: "relative",
         float: "left",
-        marginLeft: "20%",
+        marginLeft: "15%",
         marginTop: "30px",
-        height: "40px"
+        height: "40px",
+        paddingTop: "10px",
+        border: `3px solid ${palette.primary.dark}`,
+        borderRadius: "70px",
     },
     description: {
         width: "70%",
-        position: "relative",
+        position: "absolute",
         float: "left",
         left: "15%",
-        top: "3px"
+        top: "3px",
+        color: palette.primary.dark,
+        zIndex: 0,
+
+    },
+    icon: {
+        position: "absolute",
+        top: "11px",
+        left: "8px",
+
     }
 }));
 
@@ -54,13 +67,13 @@ export const ProjektElement: React.FC<ProjektElementComponentProps> = () => {
             </p>
             <a href="www.google.com">
                 <div className={classes.link}>
-                    <LanguageIcon />
+                    <GitHubIcon className={classes.icon} />
                     GIT Reposytory
                 </div>
             </a>
-            <a href="www.google.com">
+            <a href="https://material-ui.com/components/typography/">
                 <div className={classes.link}>
-                    <GitHubIcon />
+                    < LanguageIcon className={classes.icon} />
                     WWW Page
                 </div>
             </a>
