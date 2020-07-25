@@ -43,7 +43,7 @@ export const WhoAmIComponent: React.FC<WhoAmIComponentProps> = () => {
     const classes = useStyles();
     return (
         <div className={classes.whoAmI}>
-            <p className={classes.title}> ABOUT ME</p>
+            <p className={classes.title}>@_ABOUT_ME</p>
             <img className={classes.face} src='../../../img/face.png' alt="pic" />
             <p className={classes.text}> ble ble ble ble ble ble ble ble ble ble
             ble ble ble ble ble ble ble ble ble ble
