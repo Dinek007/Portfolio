@@ -3,6 +3,7 @@ import { ThemeProvider } from '@material-ui/core'
 import { HeaderContainer } from './pages/header/headerContainer'
 import { WhoAmIContainer } from './pages/whoAmI/whoAmIContainer'
 import { MySkillsContainer } from './pages/mySkills/mySkillsContainer'
+import { MyProjektsContainer } from './pages/myProjekts/myProjektsContainer'
 import { theme } from './theme'
 
 
@@ -12,6 +13,7 @@ export const App = () => {
       <HeaderContainer />
       <WhoAmIContainer />
       <MySkillsContainer />
+      <MyProjektsContainer />
     </ThemeProvider>
   )
 }

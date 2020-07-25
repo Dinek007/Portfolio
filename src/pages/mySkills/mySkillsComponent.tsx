@@ -17,7 +17,7 @@ const useStyles = makeStyles(({ palette }) => createStyles({
     title: {
         position: "relative",
         top: "90px",
-        color: palette.secondary.light,
+        color: palette.secondary.main,
         fontFamily: "Candara",
         fontSize: "58px",
     },
