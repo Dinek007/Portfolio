@@ -5,6 +5,7 @@ import { WhoAmIContainer } from './pages/whoAmI/whoAmIContainer'
 import { MySkillsContainer } from './pages/mySkills/mySkillsContainer'
 import { MyProjektsContainer } from './pages/myProjekts/myProjektsContainer'
 import { CommunicationContainer } from './pages/communication/communicationContainer'
+import { FooterContainer } from './pages/footer/footerContainer'
 import { theme } from './theme'
 
 
@@ -16,6 +17,7 @@ export const App = () => {
       <MySkillsContainer />
       <MyProjektsContainer />
       <CommunicationContainer />
+      <FooterContainer />
     </ThemeProvider>
   )
 }
