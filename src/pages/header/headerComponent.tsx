@@ -3,6 +3,7 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import { HeaderButton } from '../../components/headerButton'
 import { HeaderComponentProps } from "./types";
+import { ListItemSecondaryAction } from "@material-ui/core";
 
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
@@ -64,25 +65,22 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     }
 }));
 
-const buttonsNames = ["About me", "My skills", "My projekts", "Contact"]
-
-export const HeaderComponent: React.FC<HeaderComponentProps> = () => {
+export const HeaderComponent: React.FC<HeaderComponentProps> = ({ items }) => {
     const classes = useStyles();
-
     return (
         <>
             <div className={classes.header}>
-                <p className={classes.paragraph}> PORTFOLIO PAGE </p>
+                <p className={classes.paragraph}> {items.description} </p>
                 <div className={classes.buttons}>
                     {
-                        buttonsNames.map((item, index) =>
+                        items.buttonsNames.map((item, index) =>
                             <HeaderButton key={index} text={item} />
                         )
                     }
                 </div>
             </div>
-            <p className={classes.title} > DAMIAN WILK </p>
-            <img className={classes.matrix} src='../../../img/matrix.png' alt="pic" />
+            <p className={classes.title}> {items.title} </p>
+            <img className={classes.matrix} src={items.picture} alt="pic" />
         </>
     )
 }
