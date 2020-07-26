@@ -50,26 +50,26 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     },
 }));
 
-export const CommunicationComponent: React.FC<CommunicationComponentProps> = () => {
+export const CommunicationComponent: React.FC<CommunicationComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
         <div className={classes.communication}>
-            <p className={classes.title}>@_CONTACT</p>
+            <p className={classes.title}>{items.title}</p>
             <div className={classes.contacts}>
                 <div className={classes.contact}>
                     <EmailIcon />
-                    <p className={classes.text}>damian.wilk121399@gmail.com</p>
+                    <p className={classes.text}>{items.mail}</p>
                 </div>
                 <div className={classes.contact}>
                     <PhoneIcon />
-                    <p className={classes.text}>+48 505 934 407</p>
+                    <p className={classes.text}> {items.phone} </p>
                 </div>
                 <div className={classes.contact}>
                     <LinkedInIcon />
-                    <p className={classes.text}>httpk.wilk.14</p>
+                    <p className={classes.text}>{items.linkedin}</p>
                 </div><div className={classes.contact}>
                     <FacebookIcon />
-                    <p className={classes.text}>https:/k.14</p>
+                    <p className={classes.text}>{items.facebook}</p>
                 </div>
             </div>
         </div>
