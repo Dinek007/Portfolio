@@ -8,5 +8,7 @@ export type HeaderContainerProps = {
 export type ItemsData = Record<"description" | "title" | "picture", string> &
 {
     buttonsNames: string[];
+    scrolls: string[];
 }
+
 

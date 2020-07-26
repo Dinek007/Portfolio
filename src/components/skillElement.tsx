@@ -6,8 +6,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
-import Grid from '@material-ui/core/Grid';
-
 
 import { SkillElementComponentProps } from "./types";
 
@@ -15,10 +13,13 @@ const useStyles = makeStyles(({ palette }) => createStyles({
     skillElement: {
         width: "380px",
         color: palette.secondary.dark,
+
+
     },
     avatar: {
         color: palette.primary.light,
-        backgroundColor: palette.secondary.main
+        backgroundColor: palette.secondary.main,
+        boxShadow: '0 1px 5px 2px rgba(0, 0, 0, .5)',
     },
     grid: {
 

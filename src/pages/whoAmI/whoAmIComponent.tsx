@@ -31,6 +31,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         left: "20vw",
         border: `3px solid ${palette.primary.dark}`,
         borderRadius: "70px",
+        boxShadow: '3px 3px 8px 6px rgba(0, 0, 0, .5)',
         [breakpoints.down('sm')]: {
             left: "5vw",
             width: "200px",
@@ -70,7 +71,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 export const WhoAmIComponent: React.FC<WhoAmIComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
-        <div className={classes.whoAmI}>
+        <div className={classes.whoAmI} id="WhoAmIComponent">
             <p className={classes.title}> {items.title}</p>
             <img className={classes.face} src={items.picture} alt="pic" />
             <p className={classes.text}> {items.description}</p>

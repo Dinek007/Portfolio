@@ -53,7 +53,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 export const CommunicationComponent: React.FC<CommunicationComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
-        <div className={classes.communication}>
+        <div className={classes.communication} id="CommunicationComponent">
             <p className={classes.title}>{items.title}</p>
             <div className={classes.contacts}>
                 <div className={classes.contact}>

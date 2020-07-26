@@ -41,7 +41,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
-        <div className={classes.mySkills}>
+        <div className={classes.mySkills} id="MySkillsComponent">
             <p className={classes.title}> {items.title} </p>
             <div className={classes.list}>
                 {

@@ -73,7 +73,7 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ items }) => {
                 <div className={classes.buttons}>
                     {
                         items.buttonsNames.map((item, index) =>
-                            <HeaderButton key={index} text={item} />
+                            <HeaderButton key={index} text={item} scroll={items.scrolls[index]} />
                         )
                     }
                 </div>
