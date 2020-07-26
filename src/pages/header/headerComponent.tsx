@@ -3,7 +3,6 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import { HeaderButton } from '../../components/headerButton'
 import { HeaderComponentProps } from "./types";
-import { ListItemSecondaryAction } from "@material-ui/core";
 
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
