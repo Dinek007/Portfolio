@@ -34,16 +34,21 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     }
 }));
 
-export const MyProjektsComponent: React.FC<MyProjektsComponentProps> = () => {
+export const MyProjektsComponent: React.FC<MyProjektsComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
         <div className={classes.myProjekts}>
             <p className={classes.title}>@_MY_PROJECTS</p>
             <div className={classes.projekts}>
-                <ProjektElement />
-                <ProjektElement />
-                <ProjektElement />
-                <ProjektElement />
+                {
+                    items.projekt.map((item, index) =>
+                        <ProjektElement
+                            data={item}
+                            buttonNames={items.buttonNames}
+                            key={index}
+                        />
+                    )
+                }
             </div>
 
         </div>

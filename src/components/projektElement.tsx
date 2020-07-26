@@ -14,7 +14,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         fontSize: "20px",
         fontFamily: "Candara",
         position: "relative",
-
         marginBottom: "60px"
     },
     picture: {
@@ -65,7 +64,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         backgroundColor: palette.secondary.dark,
         opacity: 0.7,
         width: "100%",
-
         position: "absolute",
         top: "0px",
         border: `3px solid ${palette.primary.dark}`,
@@ -79,7 +77,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     }
 }));
 
-export const ProjektElement: React.FC<ProjektElementComponentProps> = () => {
+export const ProjektElement: React.FC<ProjektElementComponentProps> = ({ data, buttonNames }) => {
     const classes = useStyles();
     const [isShown, setIsShown] = useState(false);
     return (
@@ -88,39 +86,28 @@ export const ProjektElement: React.FC<ProjektElementComponentProps> = () => {
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
             >
-                <img className={classes.picture} src='../../../img/matrix.png' alt="pic" />
+                <img className={classes.picture} src={data.linkPicture} alt="pic" />
                 {isShown && (
                     <>
-                        <div className={classes.descriptionCont}>
-
-                        </div>
-                        <p className={classes.description}>
-                            ble ble ble ble ble ble ble ble ble ble
-                            ble ble ble ble ble ble ble ble ble ble ble
-                            ble ble ble ble ble ble ble ble ble ble ble
-                            ble ble ble ble ble ble ble ble ble ble ble
-                        </p>
+                        <div className={classes.descriptionCont}></div>
+                        <p className={classes.description}> {data.description} </p>
                     </>
                 )}
-
             </div>
-
             <div className={classes.linksBox}>
-                <a href="www.google.com" className={classes.linkA}>
+                <a href={data.gitLink} className={classes.linkA}>
                     <div className={classes.linkContainer}>
                         <GitHubIcon className={classes.icon} />
-                    GIT Reposytory
-                </div>
+                        {buttonNames[0]}
+                    </div>
                 </a>
-                <a href="https://material-ui.com/components/typography/" className={classes.linkA}>
+                <a href={data.wwwLink} className={classes.linkA}>
                     <div className={classes.linkContainer}>
                         < LanguageIcon className={classes.icon} />
-                    WWW Page
-                </div>
+                        {buttonNames[1]}
+                    </div>
                 </a>
             </div>
-
-
         </div>
     )
 }
