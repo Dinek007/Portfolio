@@ -38,14 +38,14 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     }
 }));
 
-export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ skillsLibrary }) => {
+export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
         <div className={classes.mySkills}>
-            <p className={classes.title}>@_MY_SKILLS</p>
+            <p className={classes.title}> {items.title} </p>
             <div className={classes.list}>
                 {
-                    skillsLibrary.map((item, index) =>
+                    items.skillNames.map((item, index) =>
                         <SkillElement
                             key={index}
                             ico={item.ico}

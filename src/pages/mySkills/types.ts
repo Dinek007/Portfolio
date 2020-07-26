@@ -1,18 +1,17 @@
 export type MySkillsComponentProps = {
-    skillsLibrary: Array<
-        {
-            ico: string,
-            name: string,
-            description: string
-        }
-    >
+    items: ItemsData
 }
 export type MySkillsContainerProps = {
-    skillsLibrary?: Array<
+    items?: ItemsData
+}
+
+export type ItemsData = {
+    title: string;
+    skillNames: Array<
         {
             ico: string,
             name: string,
             description: string
         }
-    >
+    >;
 }
