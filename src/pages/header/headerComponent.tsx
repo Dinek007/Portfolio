@@ -5,7 +5,7 @@ import { HeaderButton } from '../../components/headerButton'
 import { HeaderComponentProps } from "./types";
 
 
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     header: {
         backgroundColor: palette.secondary.main,
         position: "fixed",
@@ -13,13 +13,23 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         width: "100vw",
         height: "40px",
         borderBottom: `3px solid ${palette.primary.dark}`,
-        zIndex: 30
+        zIndex: 3,
+        [breakpoints.down('xs')]: {
+            height: "80px",
+        },
     },
     buttons: {
         width: "70vw",
         top: "0px",
         position: "relative",
-        float: "right"
+        float: "right",
+        [breakpoints.down('sm')]: {
+            width: "100vw",
+        },
+        [breakpoints.down('xs')]: {
+            top: "50%",
+            transform: "translate(0, -50%)"
+        },
     },
     paragraph: {
         position: "relative",
@@ -28,10 +38,14 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         left: "60px",
         color: palette.primary.dark,
         fontSize: "30px",
-        fontFamily: "Candara"
+        fontFamily: "Candara",
+        [breakpoints.down('sm')]: {
+            width: "0px",
+            fontSize: "0px"
+        },
     },
     matrix: {
-        width: "100vw",
+        width: "100%",
         height: "450px",
         borderBottom: `5px solid ${palette.primary.main}`,
         borderBottomLeftRadius: "70px",
@@ -41,33 +55,31 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         position: "absolute",
         left: "50%",
         transform: "translate(-50%, 0)",
-        top: "200px",
+        top: "150px",
         margin: "0 auto",
         color: palette.primary.main,
         fontSize: "90px",
-        fontFamily: "Candara"
+        fontFamily: "Candara",
+        width: "100%"
     }
 }));
 
-const buttonsNames = ["About me", "My skills", "My projekts", "Contact"]
-
-export const HeaderComponent: React.FC<HeaderComponentProps> = () => {
+export const HeaderComponent: React.FC<HeaderComponentProps> = ({ items }) => {
     const classes = useStyles();
-
     return (
         <>
             <div className={classes.header}>
-                <p className={classes.paragraph}> PORTFOLIO PAGE </p>
+                <p className={classes.paragraph}> {items.description} </p>
                 <div className={classes.buttons}>
                     {
-                        buttonsNames.map((item, index) =>
+                        items.buttonsNames.map((item, index) =>
                             <HeaderButton key={index} text={item} />
                         )
                     }
                 </div>
             </div>
-            <p className={classes.title} > DAMIAN WILK </p>
-            <img className={classes.matrix} src='../../../img/matrix.png' alt="pic" />
+            <p className={classes.title}> {items.title} </p>
+            <img className={classes.matrix} src={items.picture} alt="pic" />
         </>
     )
 }

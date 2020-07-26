@@ -4,16 +4,19 @@ import Button from '@material-ui/core/Button';
 
 import { HeaderButtonComponentProps } from "./types";
 
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     item: {
         marginLeft: "0px",
         textAlign: "center",
         color: palette.primary.main,
-        width: "15vw",
+        width: "25%",
         height: "40px",
         borderRadius: "0",
         fontSize: "20px",
-        fontFamily: "Candara"
+        fontFamily: "Candara",
+        [breakpoints.down('xs')]: {
+            height: "80px",
+        },
     },
 }));
 

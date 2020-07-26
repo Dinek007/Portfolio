@@ -1,18 +1,18 @@
 import React from "react"
 import { makeStyles, createStyles } from '@material-ui/core/styles';
-import { SkillElement } from '../../components/skillElement'
 
 import { MySkillsComponentProps } from "./types";
+import { SkillElement } from '../../components/skillElement'
 
-
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     mySkills: {
         backgroundColor: palette.primary.light,
         position: "relative",
-        width: "100vw",
-        top: "-350px",
-        height: "830px",
-        zIndex: -3
+        width: "100%",
+        height: "860px",
+        [breakpoints.down('sm')]: {
+            height: "1500px",
+        },
     },
     title: {
         position: "relative",
@@ -24,32 +24,34 @@ const useStyles = makeStyles(({ palette }) => createStyles({
     list: {
         marginTop: "190px",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         flexWrap: "wrap",
+        justifyContent: "center",
         height: "400px",
         width: "80vw",
-        marginLeft: "10vw"
+        marginLeft: "10vw",
+        [breakpoints.down('sm')]: {
+            marginLeft: "20vw",
+            width: "60vw",
+            height: "800px",
+        },
     }
 }));
 
-
-
-export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ skillsLibrary }) => {
+export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
         <div className={classes.mySkills}>
-            <p className={classes.title}>@_MY_SKILLS</p>
+            <p className={classes.title}> {items.title} </p>
             <div className={classes.list}>
                 {
-                    skillsLibrary.map((item, index) =>
-
+                    items.skillNames.map((item, index) =>
                         <SkillElement
                             key={index}
                             ico={item.ico}
                             primary={item.name}
                             secondary={item.description}
                         />
-
                     )
                 }
             </div>

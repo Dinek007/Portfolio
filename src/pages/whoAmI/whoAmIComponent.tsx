@@ -3,18 +3,22 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 import { WhoAmIComponentProps } from "./types";
 
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     whoAmI: {
         backgroundColor: "#aaaaaa",
         position: "relative",
-        width: "100vw",
-        top: "-350px",
-        height: "1200px",
-        zIndex: -3
+        width: "100%",
+        height: "930px",
+        [breakpoints.down('sm')]: {
+            height: "750px",
+        },
+        [breakpoints.down('xs')]: {
+            height: "880px",
+        },
     },
     title: {
         position: "relative",
-        top: "450px",
+        top: "130px",
         color: palette.primary.dark,
         fontFamily: "Candara",
         fontSize: "58px"
@@ -23,39 +27,53 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         position: "absolute",
         width: "250px",
         height: "300px",
-        top: "650px",
-        left: "23vw",
+        top: "350px",
+        left: "20vw",
         border: `3px solid ${palette.primary.dark}`,
         borderRadius: "70px",
+        [breakpoints.down('sm')]: {
+            left: "5vw",
+            width: "200px",
+            height: "240px",
+        },
+        [breakpoints.down('xs')]: {
+            left: "50%",
+            transform: "translate(-50%, 0)",
+            top: "245px"
+        },
     },
     text: {
         position: "absolute",
-        width: "600px",
-        top: "650px",
+        width: "40vw",
+        minWidth: "400px",
+        top: "350px",
         left: "50vw",
         color: "black",
         fontFamily: "Candara",
-        fontSize: "33px"
+        fontSize: "33px",
+        [breakpoints.down('sm')]: {
+            fontSize: "23px",
+            width: "50vw",
+            left: "40vw",
+            minWidth: "0px"
+        },
+        [breakpoints.down('xs')]: {
+            fontSize: "23px",
+            width: "80vw",
+            left: "10vw",
+            top: "530px"
+        },
+
     }
 }));
 
-export const WhoAmIComponent: React.FC<WhoAmIComponentProps> = () => {
+export const WhoAmIComponent: React.FC<WhoAmIComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
         <div className={classes.whoAmI}>
-            <p className={classes.title}>@_ABOUT_ME</p>
-            <img className={classes.face} src='../../../img/face.png' alt="pic" />
-            <p className={classes.text}> ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            ble ble ble ble ble ble ble ble ble ble
-            </p>
+            <p className={classes.title}> {items.title}</p>
+            <img className={classes.face} src={items.picture} alt="pic" />
+            <p className={classes.text}> {items.description}</p>
         </div>
     )
 }
