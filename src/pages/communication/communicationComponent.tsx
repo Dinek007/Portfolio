@@ -7,13 +7,12 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import { CommunicationComponentProps } from "./types";
 
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     communication: {
         backgroundColor: "white",
         position: "relative",
-        width: "100vw",
-        top: "-350px",
-        height: "580px",
+        width: "100%",
+        height: "auto",
     },
     title: {
         position: "relative",
@@ -24,31 +23,31 @@ const useStyles = makeStyles(({ palette }) => createStyles({
     },
     contacts: {
         position: "relative",
-        width: "100vw",
+        width: "100%",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         flexWrap: "wrap",
-        height: "300px",
-        top: "150px",
+        marginTop: "150px",
     },
     contact: {
         marginTop: "40px",
         textAlign: "center",
-        width: "35%",
+        width: "800px",
         height: "80px",
         borderRadius: "0",
         fontSize: "20px",
         fontFamily: "Candara",
         position: "relative",
+        paddingBottom: "50px"
     },
     text: {
         fontSize: "30px",
         color: palette.primary.dark,
-        marginTop: "20px"
+        marginTop: "15px",
+        [breakpoints.down('xs')]: {
+            fontSize: "20px"
+        },
     },
-    ico: {
-
-    }
 }));
 
 export const CommunicationComponent: React.FC<CommunicationComponentProps> = () => {
@@ -67,10 +66,10 @@ export const CommunicationComponent: React.FC<CommunicationComponentProps> = () 
                 </div>
                 <div className={classes.contact}>
                     <LinkedInIcon />
-                    <p className={classes.text}>https://www.facebook.com/damian.wilk.14</p>
+                    <p className={classes.text}>httpk.wilk.14</p>
                 </div><div className={classes.contact}>
                     <FacebookIcon />
-                    <p className={classes.text}>https://www.facebook.com/damian.wilk.14</p>
+                    <p className={classes.text}>https:/k.14</p>
                 </div>
             </div>
         </div>

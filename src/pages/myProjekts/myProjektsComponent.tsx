@@ -5,13 +5,13 @@ import { ProjektElement } from '../../components/projektElement'
 import { MyProjektsComponentProps } from "./types";
 
 
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     myProjekts: {
         backgroundColor: palette.secondary.dark,
         position: "relative",
-        width: "100vw",
-        top: "-350px",
-        height: "1700px",
+        width: "100%",
+        height: "auto",
+        paddingBottom: "180px"
     },
     title: {
         position: "relative",
@@ -19,19 +19,20 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         color: palette.primary.light,
         fontFamily: "Candara",
         fontSize: "58px",
+        paddingBottom: "50px"
     },
     projekts: {
         position: "relative",
-        width: "100vw",
+        textAlign: "center",
+        width: "90vw",
         display: "flex",
-        flexDirection: "column",
+        flexDirection: "row",
         flexWrap: "wrap",
-        height: "1400px",
+        justifyContent: "center",
         top: "150px",
+
     }
 }));
-
-
 
 export const MyProjektsComponent: React.FC<MyProjektsComponentProps> = () => {
     const classes = useStyles();
