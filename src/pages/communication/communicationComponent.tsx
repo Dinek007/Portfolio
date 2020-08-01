@@ -17,7 +17,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     title: {
         position: "relative",
         top: "90px",
-        color: palette.primary.main,
+        color: palette.secondary.light,
         fontFamily: "Candara",
         fontSize: "58px",
     },

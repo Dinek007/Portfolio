@@ -9,10 +9,15 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         backgroundColor: palette.primary.light,
         position: "relative",
         width: "100%",
-        height: "860px",
-        [breakpoints.down('sm')]: {
-            height: "1500px",
+        height: "930px",
+        [breakpoints.down('md')]: {
+            height: "1180px",
         },
+        [breakpoints.down('sm')]: {
+            height: "1900px",
+        },
+
+
     },
     title: {
         position: "relative",

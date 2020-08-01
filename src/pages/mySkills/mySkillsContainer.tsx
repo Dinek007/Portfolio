@@ -8,64 +8,94 @@ const itemsData: ItemsData = {
     skillNames:
         [
             {
+                ico: "H",
+                name: "HTML5",
+                description: "Markup language"
+            },
+            {
+                ico: "C",
+                name: "CSS3",
+                description: "Cascading Style Sheets language"
+            },
+            {
+                ico: "G",
+                name: "Git",
+                description: "System for tracking changes"
+            },
+            {
                 ico: "R",
-                name: "React.js",
+                name: "RWD",
+                description: "Responsive web design"
+            },
+            {
+                ico: "R",
+                name: "React",
+                description: "JavaScript framework"
+            },
+            {
+                ico: "R",
+                name: "React Hooks",
+                description: "JavaScript framework"
+            },
+            {
+                ico: "T",
+                name: "TypeScript",
+                description: "Programming language"
+            },
+            {
+                ico: "R",
+                name: "Redux",
+                description: "JavaScript library"
+            },
+            {
+                ico: "M",
+                name: "Material-UI",
+                description: "JavaScript library"
+            },
+            {
+                ico: "T",
+                name: "Three.js",
                 description: "JavaScript library"
             },
             {
                 ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
+                name: "React Native",
+                description: "JavaScript framework"
             },
             {
                 ico: "R",
-                name: "React.js",
+                name: "Redux-Saga (basics)",
                 description: "JavaScript library"
             },
             {
-                ico: "R",
-                name: "React.js",
+                ico: "C",
+                name: "C and C++ (basics)",
+                description: "Programming language"
+            },
+            {
+                ico: "N",
+                name: "Node.js + Express.js (basics)",
                 description: "JavaScript library"
             },
             {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
+                ico: "j",
+                name: "jQuery",
+                description: "JavaScript framework"
             },
             {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
+                ico: "V",
+                name: "Vue.js (started learning)",
+                description: "JavaScript framework"
             },
             {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
+                ico: "L",
+                name: "Linux",
+                description: "Operating system"
             },
             {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
-            },
-            {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
-            },
-            {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
-            },
-            {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
-            },
-            {
-                ico: "R",
-                name: "React.js",
-                description: "JavaScript library"
+                ico: "E",
+                name: "English",
+                description: "Intermediate level"
             },
         ]
 }

@@ -13,7 +13,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
             height: "750px",
         },
         [breakpoints.down('xs')]: {
-            height: "880px",
+            height: "900px",
         },
     },
     title: {
@@ -51,18 +51,19 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         left: "50vw",
         color: "black",
         fontFamily: "Candara",
-        fontSize: "33px",
+        fontSize: "30px",
         [breakpoints.down('sm')]: {
-            fontSize: "23px",
+            fontSize: "20px",
             width: "50vw",
             left: "40vw",
             minWidth: "0px"
         },
         [breakpoints.down('xs')]: {
-            fontSize: "23px",
+            fontSize: "17px",
             width: "80vw",
             left: "10vw",
-            top: "530px"
+            top: "530px",
+
         },
 
     }

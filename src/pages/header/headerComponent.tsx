@@ -11,7 +11,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         position: "fixed",
         top: "0px",
         width: "100vw",
-        height: "40px",
+        height: "60px",
         borderBottom: `3px solid ${palette.primary.dark}`,
         zIndex: 3,
         [breakpoints.down('xs')]: {
@@ -34,7 +34,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     paragraph: {
         position: "relative",
         float: "left",
-        top: "3px",
+        top: "13px",
         left: "60px",
         color: palette.primary.dark,
         fontSize: "30px",
@@ -47,17 +47,21 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     matrix: {
         width: "100%",
         height: "450px",
-        borderBottom: `5px solid ${palette.primary.main}`,
-        borderBottomLeftRadius: "70px",
-        borderBottomRightRadius: "70px",
+        borderBottom: `5px solid ${palette.primary.dark}`,
+        borderBottomLeftRadius: "140px",
+        borderBottomRightRadius: "140px",
+        backgroundImage: "url(../../../img/forest.jpeg)",
+        backgroundPosition: "center",
+
     },
     title: {
         position: "absolute",
         left: "50%",
         transform: "translate(-50%, 0)",
-        top: "150px",
+        top: "209px",
         margin: "0 auto",
-        color: palette.primary.main,
+        color: palette.secondary.main,
+        fontWeight: "bolder",
         fontSize: "90px",
         fontFamily: "Candara",
         width: "100%"
@@ -79,7 +83,10 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ items }) => {
                 </div>
             </div>
             <p className={classes.title}> {items.title} </p>
-            <img className={classes.matrix} src={items.picture} alt="pic" />
+            <div className={classes.matrix}>
+
+            </div>
+
         </>
     )
 }

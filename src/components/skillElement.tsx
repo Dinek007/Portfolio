@@ -9,11 +9,14 @@ import Divider from '@material-ui/core/Divider';
 
 import { SkillElementComponentProps } from "./types";
 
-const useStyles = makeStyles(({ palette }) => createStyles({
+const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     skillElement: {
-        width: "380px",
+        width: "340px",
         color: palette.secondary.dark,
-
+        fontWeight: "bolder",
+        [breakpoints.down('md')]: {
+            width: "360px",
+        },
 
     },
     avatar: {
@@ -21,7 +24,8 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         backgroundColor: palette.secondary.main,
         boxShadow: '0 1px 5px 2px rgba(0, 0, 0, .5)',
     },
-    grid: {
+    text: {
+        fontWeight: "bolder",
 
     }
 }));
@@ -36,7 +40,7 @@ export const SkillElement: React.FC<SkillElementComponentProps> = ({ ico = '', p
                 <ListItemAvatar>
                     <Avatar className={classes.avatar}>{ico}</Avatar>
                 </ListItemAvatar>
-                <ListItemText primary={primary} secondary={secondary} />
+                <ListItemText className={classes.text} primary={primary} secondary={secondary} />
             </ListItem>
             <Divider variant="inset" component="li" />
         </List>

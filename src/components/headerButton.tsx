@@ -12,7 +12,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         textAlign: "center",
         color: palette.primary.main,
         width: "25%",
-        height: "40px",
+        height: "60px",
         borderRadius: "0",
         fontSize: "20px",
         fontFamily: "Candara",

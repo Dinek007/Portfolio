@@ -12,8 +12,8 @@ const itemsData: ItemsData = {
     ],
     scrolls: ["WhoAmIComponent", "MySkillsComponent", "MyProjektsComponent", "CommunicationComponent"],
     description: "PORTFOLIO PAGE",
-    title: "DAMIAN WILK",
-    picture: "../../../img/matrix.png"
+    title: "Damian Wilk",
+    picture: "../../../img/forest.jpg"
 }
 export const HeaderContainer: React.FC<HeaderContainerProps> = () => {
     const items = itemsData

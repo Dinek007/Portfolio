@@ -58,13 +58,13 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         color: palette.primary.light,
         fontSize: "25px",
         [breakpoints.down('xs')]: {
-            top: "90px",
-            fontSize: "15px"
+            top: "130px",
+            fontSize: "19px"
         },
     },
     descriptionCont: {
         backgroundColor: palette.secondary.dark,
-        opacity: 0.7,
+        opacity: 0.9,
         width: "100%",
         position: "absolute",
         top: "0px",
@@ -97,13 +97,13 @@ export const ProjektElement: React.FC<ProjektElementComponentProps> = ({ data, b
                 )}
             </div>
             <div className={classes.linksBox}>
-                <a href={data.gitLink} className={classes.linkA}>
+                <a href={data.gitLink} className={classes.linkA} target="blank">
                     <div className={classes.linkContainer}>
                         <GitHubIcon className={classes.icon} />
                         {buttonNames[0]}
                     </div>
                 </a>
-                <a href={data.wwwLink} className={classes.linkA}>
+                <a href={data.wwwLink} className={classes.linkA} target="blank">
                     <div className={classes.linkContainer}>
                         < LanguageIcon className={classes.icon} />
                         {buttonNames[1]}

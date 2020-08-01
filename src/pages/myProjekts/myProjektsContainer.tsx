@@ -10,25 +10,25 @@ const itemsData: ItemsData = {
         {
             linkPicture: "../../../img/matrix.png",
             description: "ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ",
-            gitLink: "",
+            gitLink: "https://github.com/Dinek007/Shop_app",
             wwwLink: "",
         },
         {
-            linkPicture: "../../../img/matrix.png",
+            linkPicture: "../../../img/PokerPic.png",
             description: "ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ",
-            gitLink: "",
-            wwwLink: "",
+            gitLink: "https://github.com/Dinek007/Poker",
+            wwwLink: "https://poker-9cc0e.web.app/",
         },
         {
-            linkPicture: "../../../img/matrix.png",
+            linkPicture: "../../../img/TodoListPic.png",
             description: "ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ",
-            gitLink: "",
-            wwwLink: "",
+            gitLink: "https://github.com/Dinek007/Todo-List",
+            wwwLink: "https://todo-list-76a23.web.app/",
         },
         {
-            linkPicture: "../../../img/matrix.png",
+            linkPicture: "../../../img/PortfolioPic.png",
             description: "ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ble ",
-            gitLink: "",
+            gitLink: "https://github.com/Dinek007/Portfolio",
             wwwLink: "",
         }
     ]
