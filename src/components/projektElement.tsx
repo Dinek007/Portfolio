@@ -21,17 +21,19 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         border: `3px solid ${palette.primary.dark}`,
         borderRadius: "70px",
         height: "320px",
+        boxShadow: '3px 3px 8px 8px rgba(0, 0, 0, .5)',
     },
     linkContainer: {
         backgroundColor: palette.secondary.main,
         color: palette.primary.light,
         width: "230px",
-        marginTop: "15px",
+        marginTop: "30px",
         position: "relative",
         height: "40px",
         paddingTop: "13px",
         border: `3px solid ${palette.primary.dark}`,
         borderRadius: "70px",
+        boxShadow: '3px 3px 8px 8px rgba(0, 0, 0, .5)',
         "&:hover": {
             backgroundColor: palette.secondary.dark,
         },
@@ -56,13 +58,13 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         color: palette.primary.light,
         fontSize: "25px",
         [breakpoints.down('xs')]: {
-            top: "90px",
-            fontSize: "15px"
+            top: "130px",
+            fontSize: "19px"
         },
     },
     descriptionCont: {
         backgroundColor: palette.secondary.dark,
-        opacity: 0.7,
+        opacity: 0.9,
         width: "100%",
         position: "absolute",
         top: "0px",
@@ -95,13 +97,13 @@ export const ProjektElement: React.FC<ProjektElementComponentProps> = ({ data, b
                 )}
             </div>
             <div className={classes.linksBox}>
-                <a href={data.gitLink} className={classes.linkA}>
+                <a href={data.gitLink} className={classes.linkA} target="blank">
                     <div className={classes.linkContainer}>
                         <GitHubIcon className={classes.icon} />
                         {buttonNames[0]}
                     </div>
                 </a>
-                <a href={data.wwwLink} className={classes.linkA}>
+                <a href={data.wwwLink} className={classes.linkA} target="blank">
                     <div className={classes.linkContainer}>
                         < LanguageIcon className={classes.icon} />
                         {buttonNames[1]}

@@ -1,4 +1,7 @@
-export type HeaderButtonComponentProps = { text?: string }
+export type HeaderButtonComponentProps = {
+    text?: string;
+    scroll: string;
+}
 export type ProjektElementComponentProps = {
     data: {
         linkPicture: string;

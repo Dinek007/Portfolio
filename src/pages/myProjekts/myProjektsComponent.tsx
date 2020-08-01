@@ -37,7 +37,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 export const MyProjektsComponent: React.FC<MyProjektsComponentProps> = ({ items }) => {
     const classes = useStyles();
     return (
-        <div className={classes.myProjekts}>
+        <div className={classes.myProjekts} id="MyProjektsComponent">
             <p className={classes.title}>@_MY_PROJECTS</p>
             <div className={classes.projekts}>
                 {

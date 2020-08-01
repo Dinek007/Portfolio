@@ -11,7 +11,9 @@ const useStyles = makeStyles(({ palette }) => createStyles({
         height: "auto",
         color: palette.primary.dark,
         borderTop: `4px solid ${palette.primary.dark}`,
-        fontSize: "30px",
+        fontSize: "25px",
+        paddingBottom: "5px",
+        paddingTop: "5px",
         fontFamily: "Candara",
     },
 }));
