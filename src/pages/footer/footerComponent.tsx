@@ -20,6 +20,7 @@ const useStyles = makeStyles(({ palette }) => createStyles({
 
 export const FooterComponent: React.FC<FooterComponentProps> = ({ item }) => {
     const classes = useStyles();
+
     return (
         <div className={classes.footer}>
             <p> {item} </p>

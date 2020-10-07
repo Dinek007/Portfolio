@@ -69,13 +69,12 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
             top: "530px",
 
         },
-
-
     }
 }));
 
 export const WhoAmIComponent: React.FC<WhoAmIComponentProps> = ({ items }) => {
     const classes = useStyles();
+
     return (
         <div className={classes.whoAmI} id="WhoAmIComponent">
             <p className={classes.title}> {items.title}</p>

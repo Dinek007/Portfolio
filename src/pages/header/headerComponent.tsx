@@ -4,7 +4,6 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { HeaderButton } from '../../components/headerButton'
 import { HeaderComponentProps } from "./types";
 
-
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     header: {
         backgroundColor: palette.secondary.dark,
@@ -52,7 +51,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         borderBottomRightRadius: "140px",
         backgroundImage: "url(../../../img/forest.jpeg)",
         backgroundPosition: "center",
-
     },
     title: {
         position: "absolute",
@@ -70,6 +68,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 
 export const HeaderComponent: React.FC<HeaderComponentProps> = ({ items }) => {
     const classes = useStyles();
+
     return (
         <>
             <div className={classes.header}>
@@ -84,9 +83,7 @@ export const HeaderComponent: React.FC<HeaderComponentProps> = ({ items }) => {
             </div>
             <p className={classes.title}> {items.title} </p>
             <div className={classes.matrix}>
-
             </div>
-
         </>
     )
 }

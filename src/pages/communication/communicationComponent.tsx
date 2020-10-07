@@ -28,7 +28,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         flexDirection: "row",
         flexWrap: "wrap",
         marginTop: "150px",
-
     },
     contact: {
         marginTop: "45px",
@@ -57,6 +56,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 
 export const CommunicationComponent: React.FC<CommunicationComponentProps> = ({ items }) => {
     const classes = useStyles();
+
     return (
         <div className={classes.communication} id="CommunicationComponent">
             <p className={classes.title}>{items.title}</p>

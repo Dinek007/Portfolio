@@ -107,6 +107,7 @@ const itemsData: ItemsData = {
 
 export const MySkillsContainer: React.FC<MySkillsContainerProps> = () => {
     const items = itemsData
+
     return (
         <MySkillsComponent items={items} />
     )

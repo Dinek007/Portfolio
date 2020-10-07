@@ -11,6 +11,7 @@ const itemsData: ItemsData = {
 
 export const WhoAmIContainer: React.FC<WhoAmIContainerProps> = () => {
     const items = itemsData
+
     return (
         <WhoAmIComponent items={items} />
     )

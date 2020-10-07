@@ -1,10 +1,7 @@
-
-
 export type HeaderButtonComponentProps = {
     text?: string;
     scroll: string;
 }
-
 
 export type ProjektElementComponentProps = {
     buttonNames: string[];
@@ -13,6 +10,7 @@ export type ProjektElementComponentProps = {
         description: React.ReactNode;
     };
 }
+
 export type SkillElementComponentProps = {
     primary?: string,
     secondary?: string,

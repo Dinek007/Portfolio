@@ -4,7 +4,6 @@ import { makeStyles, createStyles } from '@material-ui/core/styles';
 import { ProjektElement } from '../../components/projektElement'
 import { MyProjektsComponentProps } from "./types";
 
-
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     myProjekts: {
         backgroundColor: palette.secondary.dark,
@@ -30,13 +29,13 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         flexWrap: "wrap",
         justifyContent: "center",
         top: "150px",
-
     }
 }));
 
 export const MyProjektsComponent: React.FC<MyProjektsComponentProps> = ({ items, buttonNames }) => {
     const classes = useStyles();
     return (
+
         <div className={classes.myProjekts} id="MyProjektsComponent">
             <p className={classes.title}>MY _PROJECTS</p>
             <div className={classes.projekts}>
@@ -50,7 +49,6 @@ export const MyProjektsComponent: React.FC<MyProjektsComponentProps> = ({ items,
                     )
                 }
             </div>
-
         </div>
     )
 }

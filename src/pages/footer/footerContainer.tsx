@@ -7,6 +7,7 @@ const itemData: ItemData = "Damian Wilk 2020"
 
 export const FooterContainer: React.FC<FooterContainerProps> = () => {
     const item = itemData
+
     return (
         <FooterComponent item={item} />
     )

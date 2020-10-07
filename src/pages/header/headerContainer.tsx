@@ -15,8 +15,10 @@ const itemsData: ItemsData = {
     title: "Damian Wilk",
     picture: "../../../img/forest.jpg"
 }
+
 export const HeaderContainer: React.FC<HeaderContainerProps> = () => {
     const items = itemsData
+
     return (
         <HeaderComponent items={items} />
     )

@@ -1,4 +1,3 @@
-import Typography from "@material-ui/core/Typography/Typography";
 import React from "react"
 
 import { MyProjektsComponent } from "./myProjektsComponent"
@@ -10,6 +9,7 @@ const DescriptionComponent: React.FC<DescriptionComponentProps> = ({
     description,
     technologies
 }) => {
+
     return <>
         {description} <br /> <br /> {technologies}
     </>
@@ -60,6 +60,7 @@ const itemsData = {
 
 export const MyProjektsContainer: React.FC<MyProjektsContainerProps> = () => {
     const items = itemsData
+
     return (
         <MyProjektsComponent {...items} />
     )
