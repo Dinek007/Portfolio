@@ -4,7 +4,7 @@ import { CommunicationComponent } from "./communicationComponent"
 import { CommunicationContainerProps, ItemsData } from "./types";
 
 const itemsData: ItemsData = {
-    title: "@_CONTACT",
+    title: "CONTACT",
     phone: "+48 505 934 407",
     mail: "damian.wilk991213@gmail.com",
     linkedin: "aaa",

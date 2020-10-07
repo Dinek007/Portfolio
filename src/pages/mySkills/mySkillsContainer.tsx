@@ -4,7 +4,7 @@ import { MySkillsComponent } from "./mySkillsComponent"
 import { MySkillsContainerProps, ItemsData } from "./types";
 
 const itemsData: ItemsData = {
-    title: "@_MY_SKILLS",
+    title: "MY_SKILLS",
     skillNames:
         [
             {
@@ -35,7 +35,17 @@ const itemsData: ItemsData = {
             {
                 ico: "R",
                 name: "React Hooks",
+                description: "React feature for functional components"
+            },
+            {
+                ico: "R",
+                name: "React Native",
                 description: "JavaScript framework"
+            },
+            {
+                ico: "R",
+                name: "React Router",
+                description: "Declarative Routing for React.js"
             },
             {
                 ico: "T",
@@ -48,9 +58,14 @@ const itemsData: ItemsData = {
                 description: "JavaScript library"
             },
             {
+                ico: "R",
+                name: "Redux-Saga (basics)",
+                description: "Saga middleware for Redux to handle Side Effects"
+            },
+            {
                 ico: "M",
                 name: "Material-UI",
-                description: "JavaScript library"
+                description: "JavaScript library for styling react components"
             },
             {
                 ico: "T",
@@ -58,19 +73,14 @@ const itemsData: ItemsData = {
                 description: "JavaScript library"
             },
             {
-                ico: "R",
-                name: "React Native",
-                description: "JavaScript framework"
-            },
-            {
-                ico: "R",
-                name: "Redux-Saga (basics)",
-                description: "JavaScript library"
+                ico: "F",
+                name: "Firebase",
+                description: "Hosting, Storage and Cloud Firestore"
             },
             {
                 ico: "C",
                 name: "C and C++ (basics)",
-                description: "Programming language"
+                description: "Programming languages"
             },
             {
                 ico: "N",
@@ -79,12 +89,7 @@ const itemsData: ItemsData = {
             },
             {
                 ico: "j",
-                name: "jQuery",
-                description: "JavaScript framework"
-            },
-            {
-                ico: "V",
-                name: "Vue.js (started learning)",
+                name: "jQuery (basics)",
                 description: "JavaScript framework"
             },
             {

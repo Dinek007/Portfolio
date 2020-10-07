@@ -30,7 +30,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         marginTop: "30px",
         position: "relative",
         height: "40px",
-        paddingTop: "13px",
+        paddingTop: "15px",
         border: `3px solid ${palette.primary.dark}`,
         borderRadius: "70px",
         boxShadow: '3px 3px 8px 8px rgba(0, 0, 0, .5)',
@@ -46,7 +46,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "center",
-
     },
     description: {
         width: "70%",
@@ -74,14 +73,15 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     },
     icon: {
         position: "absolute",
-        top: "12px",
-        left: "8px",
+        top: "15px",
+        left: "18px",
     }
 }));
 
 export const ProjektElement: React.FC<ProjektElementComponentProps> = ({ data, buttonNames }) => {
     const classes = useStyles();
     const [isShown, setIsShown] = useState(false);
+
     return (
         <div className={classes.projekt}>
             <div

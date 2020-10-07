@@ -5,7 +5,7 @@ import { WhoAmIComponentProps } from "./types";
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     whoAmI: {
-        backgroundColor: "#aaaaaa",
+        backgroundColor: "#dddddd",
         position: "relative",
         width: "100%",
         height: "930px",
@@ -52,11 +52,15 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         color: "black",
         fontFamily: "Candara",
         fontSize: "30px",
+        [breakpoints.down('md')]: {
+            top: "300px",
+        },
         [breakpoints.down('sm')]: {
             fontSize: "20px",
             width: "50vw",
             left: "40vw",
-            minWidth: "0px"
+            minWidth: "0px",
+            top: "340px",
         },
         [breakpoints.down('xs')]: {
             fontSize: "17px",
@@ -65,6 +69,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
             top: "530px",
 
         },
+
 
     }
 }));

@@ -28,9 +28,11 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         flexDirection: "row",
         flexWrap: "wrap",
         marginTop: "150px",
+
     },
     contact: {
-        marginTop: "40px",
+        marginTop: "45px",
+        marginBottom: "45px",
         textAlign: "center",
         width: "800px",
         height: "80px",
@@ -38,16 +40,19 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         fontSize: "20px",
         fontFamily: "Candara",
         position: "relative",
-        paddingBottom: "50px"
+        paddingBottom: "50px",
     },
     text: {
         fontSize: "30px",
         color: palette.primary.dark,
-        marginTop: "15px",
+        marginTop: "5px",
         [breakpoints.down('xs')]: {
             fontSize: "20px"
         },
     },
+    icon: {
+        fontSize: "70px"
+    }
 }));
 
 export const CommunicationComponent: React.FC<CommunicationComponentProps> = ({ items }) => {
@@ -57,18 +62,18 @@ export const CommunicationComponent: React.FC<CommunicationComponentProps> = ({ 
             <p className={classes.title}>{items.title}</p>
             <div className={classes.contacts}>
                 <div className={classes.contact}>
-                    <EmailIcon />
+                    <EmailIcon className={classes.icon} />
                     <p className={classes.text}>{items.mail}</p>
                 </div>
                 <div className={classes.contact}>
-                    <PhoneIcon />
+                    <PhoneIcon className={classes.icon} />
                     <p className={classes.text}> {items.phone} </p>
                 </div>
                 <div className={classes.contact}>
-                    <LinkedInIcon />
+                    <LinkedInIcon className={classes.icon} />
                     <p className={classes.text}>{items.linkedin}</p>
                 </div><div className={classes.contact}>
-                    <FacebookIcon />
+                    <FacebookIcon className={classes.icon} />
                     <p className={classes.text}>{items.facebook}</p>
                 </div>
             </div>

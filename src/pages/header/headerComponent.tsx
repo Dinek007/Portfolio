@@ -7,7 +7,7 @@ import { HeaderComponentProps } from "./types";
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     header: {
-        backgroundColor: palette.secondary.main,
+        backgroundColor: palette.secondary.dark,
         position: "fixed",
         top: "0px",
         width: "100vw",
