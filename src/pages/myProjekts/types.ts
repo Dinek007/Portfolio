@@ -1,19 +1,9 @@
-export type MyProjektsComponentProps = {
-    items: ItemsData;
-}
-export type MyProjektsContainerProps = {
-    items?: ItemsData
-}
+import { ProjektElementComponentProps } from "../../components/types"
 
-export type ItemsData = {
-    title: string;
-    buttonNames: string[];
-    projekt: Array<
-        {
-            linkPicture: string;
-            description: string;
-            gitLink: string;
-            wwwLink: string;
-        }
-    >;
-}
+export type MyProjektsComponentProps =
+    Pick<ProjektElementComponentProps, 'buttonNames'> & {
+        items: Array<ProjektElementComponentProps['data']>;
+        title: string;
+    }
+
+export type MyProjektsContainerProps = {}

@@ -9,15 +9,13 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         backgroundColor: palette.primary.light,
         position: "relative",
         width: "100%",
-        height: "930px",
+        height: "1030px",
         [breakpoints.down('md')]: {
-            height: "1180px",
+            height: "1300px",
         },
         [breakpoints.down('sm')]: {
-            height: "1900px",
+            height: "2090px",
         },
-
-
     },
     title: {
         position: "relative",
@@ -31,7 +29,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
-        justifyContent: "center",
+        justifyContent: "space-between",
         height: "400px",
         width: "80vw",
         marginLeft: "10vw",
@@ -45,6 +43,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 
 export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ items }) => {
     const classes = useStyles();
+
     return (
         <div className={classes.mySkills} id="MySkillsComponent">
             <p className={classes.title}> {items.title} </p>

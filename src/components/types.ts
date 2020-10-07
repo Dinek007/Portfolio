@@ -2,15 +2,15 @@ export type HeaderButtonComponentProps = {
     text?: string;
     scroll: string;
 }
+
 export type ProjektElementComponentProps = {
-    data: {
-        linkPicture: string;
-        description: string;
-        gitLink: string;
-        wwwLink: string;
-    };
     buttonNames: string[];
+    data:
+    Record<"linkPicture" | "gitLink" | "wwwLink", string> & {
+        description: React.ReactNode;
+    };
 }
+
 export type SkillElementComponentProps = {
     primary?: string,
     secondary?: string,

@@ -1,6 +1,7 @@
 export type MySkillsComponentProps = {
     items: ItemsData
 }
+
 export type MySkillsContainerProps = {
     items?: ItemsData
 }

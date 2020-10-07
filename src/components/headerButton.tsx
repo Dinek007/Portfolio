@@ -25,6 +25,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
 export const HeaderButton: React.FC<HeaderButtonComponentProps> = ({ text = '', scroll }) => {
     const classes = useStyles();
     console.log(scroll)
+
     return (
         <Link to={scroll} smooth={true} duration={1000}>
             <Button className={classes.item}> {text} </Button>

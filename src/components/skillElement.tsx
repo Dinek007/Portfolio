@@ -17,7 +17,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         [breakpoints.down('md')]: {
             width: "360px",
         },
-
     },
     avatar: {
         color: palette.primary.light,
@@ -26,7 +25,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     },
     text: {
         fontWeight: "bolder",
-
     }
 }));
 
@@ -34,7 +32,6 @@ export const SkillElement: React.FC<SkillElementComponentProps> = ({ ico = '', p
     const classes = useStyles();
 
     return (
-
         <List className={classes.skillElement}>
             <ListItem>
                 <ListItemAvatar>
