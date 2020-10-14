@@ -8,6 +8,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         backgroundColor: "#dddddd",
         position: "relative",
         width: "100%",
+        minHeight: "100vh",
         height: "930px",
         [breakpoints.down('sm')]: {
             height: "750px",
@@ -30,7 +31,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         top: "350px",
         left: "20vw",
         border: `3px solid ${palette.primary.dark}`,
-        borderRadius: "70px",
+        borderRadius: "0px",
         boxShadow: '3px 3px 8px 6px rgba(0, 0, 0, .5)',
         [breakpoints.down('sm')]: {
             left: "5vw",
@@ -66,7 +67,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
             fontSize: "17px",
             width: "80vw",
             left: "10vw",
-            top: "530px",
+            top: "560px",
 
         },
     }
