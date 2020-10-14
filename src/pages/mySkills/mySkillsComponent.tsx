@@ -10,6 +10,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         position: "relative",
         width: "100%",
         height: "1030px",
+        minHeight: "100vh",
         [breakpoints.down('md')]: {
             height: "1300px",
         },
@@ -19,7 +20,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     },
     title: {
         position: "relative",
-        top: "90px",
+        top: "130px",
         color: palette.secondary.main,
         fontFamily: "Candara",
         fontSize: "58px",
@@ -29,15 +30,26 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
-        justifyContent: "space-between",
+
         height: "400px",
         width: "80vw",
-        marginLeft: "10vw",
+        marginLeft: "15vw",
         [breakpoints.down('sm')]: {
             marginLeft: "20vw",
             width: "60vw",
             height: "800px",
         },
+    },
+    ul: {
+        width: "340px",
+        color: palette.secondary.dark,
+        fontWeight: "bolder",
+        [breakpoints.down('md')]: {
+            width: "360px",
+        },
+        paddingTop: "8px",
+        paddingBottom: "8px",
+        margin: 0
     }
 }));
 
@@ -58,6 +70,7 @@ export const MySkillsComponent: React.FC<MySkillsComponentProps> = ({ items }) =
                         />
                     )
                 }
+                <ul className={classes.ul} />
             </div>
         </div>
     )

@@ -28,6 +28,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         flexDirection: "row",
         flexWrap: "wrap",
         marginTop: "150px",
+        paddingBottom: "100px",
     },
     contact: {
         marginTop: "45px",

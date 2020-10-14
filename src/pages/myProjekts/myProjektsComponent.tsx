@@ -10,11 +10,12 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         position: "relative",
         width: "100%",
         height: "auto",
+        minHeight: "100vh",
         paddingBottom: "180px"
     },
     title: {
         position: "relative",
-        top: "90px",
+        top: "110px",
         color: palette.primary.light,
         fontFamily: "Candara",
         fontSize: "58px",
