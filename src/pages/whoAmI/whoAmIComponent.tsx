@@ -8,13 +8,13 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         backgroundColor: "#dddddd",
         position: "relative",
         width: "100%",
-        minHeight: "100vh",
-        height: "930px",
+
+        height: "1100px",
         [breakpoints.down('sm')]: {
-            height: "750px",
+            height: "1100px",
         },
         [breakpoints.down('xs')]: {
-            height: "900px",
+            height: "1100px",
         },
     },
     title: {
@@ -33,15 +33,21 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         border: `4px solid ${palette.secondary.light}`,
         borderRadius: "30px",
         boxShadow: '3px 3px 8px 6px rgba(0, 0, 0, .5)',
+        [breakpoints.down('md')]: {
+            left: "15vw",
+
+        },
         [breakpoints.down('sm')]: {
-            left: "5vw",
+            left: "50%",
+            transform: "translate(-50%, 0)",
             width: "200px",
             height: "240px",
+            top: "300px"
         },
         [breakpoints.down('xs')]: {
             left: "50%",
             transform: "translate(-50%, 0)",
-            top: "245px"
+            top: "300px"
         },
     },
     text: {
@@ -58,16 +64,16 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         },
         [breakpoints.down('sm')]: {
             fontSize: "20px",
-            width: "50vw",
-            left: "40vw",
+            width: "80vw",
+            left: "10vw",
             minWidth: "0px",
-            top: "340px",
+            top: "650px",
         },
         [breakpoints.down('xs')]: {
             fontSize: "17px",
             width: "80vw",
             left: "10vw",
-            top: "560px",
+            top: "650px",
         },
     }
 }));
