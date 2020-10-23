@@ -11,7 +11,7 @@ import { SkillElementComponentProps } from "./types"
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     skillElement: {
-        width: "340px",
+        width: "20vw",
         color: palette.secondary.dark,
         fontWeight: "bolder",
         [breakpoints.down('md')]: {
