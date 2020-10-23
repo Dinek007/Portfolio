@@ -1,7 +1,7 @@
 import React from "react"
 
 import { MySkillsComponent } from "./mySkillsComponent"
-import { MySkillsContainerProps, ItemsData } from "./types";
+import { MySkillsContainerProps, ItemsData } from "./types"
 
 const itemsData: ItemsData = {
     title: "MY_SKILLS",

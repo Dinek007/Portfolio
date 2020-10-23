@@ -1,7 +1,7 @@
 import React from "react"
 
 import { CommunicationComponent } from "./communicationComponent"
-import { CommunicationContainerProps, ItemsData } from "./types";
+import { CommunicationContainerProps, ItemsData } from "./types"
 
 const itemsData: ItemsData = {
     title: "CONTACT",

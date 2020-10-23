@@ -6,4 +6,4 @@ export type FooterContainerProps = {
     item?: ItemData;
 }
 
-export type ItemData = string
+export type ItemData = string;

@@ -1,8 +1,8 @@
 import React from "react"
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles'
 
 import { HeaderButton } from '../../components/headerButton'
-import { HeaderComponentProps } from "./types";
+import { HeaderComponentProps } from "./types"
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     header: {

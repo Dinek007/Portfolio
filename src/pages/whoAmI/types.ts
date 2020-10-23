@@ -6,4 +6,4 @@ export type WhoAmIContainerProps = {
     items?: ItemsData;
 }
 
-export type ItemsData = Record<"description" | "title" | "picture", string>
+export type ItemsData = Record<"description" | "title" | "picture", string>;

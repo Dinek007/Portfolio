@@ -1,7 +1,7 @@
 import React from "react"
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles'
 
-import { MySkillsComponentProps } from "./types";
+import { MySkillsComponentProps } from "./types"
 import { SkillElement } from '../../components/skillElement'
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({

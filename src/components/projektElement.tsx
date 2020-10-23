@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import { makeStyles, createStyles } from '@material-ui/core/styles';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LanguageIcon from '@material-ui/icons/Language';
+import { makeStyles, createStyles } from '@material-ui/core/styles'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import LanguageIcon from '@material-ui/icons/Language'
 
-import { ProjektElementComponentProps } from "./types";
+import { ProjektElementComponentProps } from "./types"
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     projekt: {
