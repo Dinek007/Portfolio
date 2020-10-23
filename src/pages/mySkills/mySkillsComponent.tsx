@@ -9,14 +9,8 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         backgroundColor: palette.primary.light,
         position: "relative",
         width: "100%",
-        height: "1030px",
+        height: "auto",
         minHeight: "100vh",
-        [breakpoints.down('md')]: {
-            height: "1300px",
-        },
-        [breakpoints.down('sm')]: {
-            height: "2090px",
-        },
     },
     title: {
         position: "relative",
@@ -26,17 +20,17 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         fontSize: "58px",
     },
     list: {
-        marginTop: "190px",
+        marginTop: "205px",
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
         justifyContent: "center",
         width: "80vw",
         marginLeft: "10vw",
+        paddingBottom: "90px",
         [breakpoints.down('sm')]: {
             marginLeft: "20vw",
             width: "60vw",
-            height: "800px",
         },
     },
     ul: {
