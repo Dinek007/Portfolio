@@ -35,7 +35,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         boxShadow: '3px 3px 8px 6px rgba(0, 0, 0, .5)',
         [breakpoints.down('md')]: {
             left: "15vw",
-
         },
         [breakpoints.down('sm')]: {
             left: "50%",
