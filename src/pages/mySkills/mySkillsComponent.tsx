@@ -1,7 +1,7 @@
 import React from "react"
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles'
 
-import { MySkillsComponentProps } from "./types";
+import { MySkillsComponentProps } from "./types"
 import { SkillElement } from '../../components/skillElement'
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
@@ -30,10 +30,9 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         display: "flex",
         flexDirection: "row",
         flexWrap: "wrap",
-
-        height: "400px",
+        justifyContent: "center",
         width: "80vw",
-        marginLeft: "15vw",
+        marginLeft: "10vw",
         [breakpoints.down('sm')]: {
             marginLeft: "20vw",
             width: "60vw",
@@ -41,7 +40,7 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         },
     },
     ul: {
-        width: "340px",
+        width: "20vw",
         color: palette.secondary.dark,
         fontWeight: "bolder",
         [breakpoints.down('md')]: {
@@ -49,7 +48,8 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         },
         paddingTop: "8px",
         paddingBottom: "8px",
-        margin: 0
+        margin: "0px",
+        paddingLeft: "0px",
     }
 }));
 

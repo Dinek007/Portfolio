@@ -1,11 +1,11 @@
 import React from "react"
-import { makeStyles, createStyles } from '@material-ui/core/styles';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import EmailIcon from '@material-ui/icons/Email';
-import PhoneIcon from '@material-ui/icons/Phone';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { makeStyles, createStyles } from '@material-ui/core/styles'
+import FacebookIcon from '@material-ui/icons/Facebook'
+import EmailIcon from '@material-ui/icons/Email'
+import PhoneIcon from '@material-ui/icons/Phone'
+import LinkedInIcon from '@material-ui/icons/LinkedIn'
 
-import { CommunicationComponentProps } from "./types";
+import { CommunicationComponentProps } from "./types"
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     communication: {

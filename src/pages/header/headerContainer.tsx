@@ -1,7 +1,7 @@
 import React from "react"
 
 import { HeaderComponent } from "./headerComponent"
-import { HeaderContainerProps, ItemsData } from "./types";
+import { HeaderContainerProps, ItemsData } from "./types"
 
 const itemsData: ItemsData = {
     buttonsNames: [

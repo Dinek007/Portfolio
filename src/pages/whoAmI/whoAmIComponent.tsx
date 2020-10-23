@@ -1,7 +1,7 @@
 import React from "react"
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles'
 
-import { WhoAmIComponentProps } from "./types";
+import { WhoAmIComponentProps } from "./types"
 
 const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
     whoAmI: {
@@ -30,8 +30,8 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         height: "300px",
         top: "350px",
         left: "20vw",
-        border: `3px solid ${palette.primary.dark}`,
-        borderRadius: "0px",
+        border: `4px solid ${palette.secondary.light}`,
+        borderRadius: "30px",
         boxShadow: '3px 3px 8px 6px rgba(0, 0, 0, .5)',
         [breakpoints.down('sm')]: {
             left: "5vw",
@@ -68,7 +68,6 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
             width: "80vw",
             left: "10vw",
             top: "560px",
-
         },
     }
 }));

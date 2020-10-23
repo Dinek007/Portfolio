@@ -1,15 +1,13 @@
 import React from "react"
 
 import { MyProjektsComponent } from "./myProjektsComponent"
-import { MyProjektsContainerProps } from "./types";
+import { MyProjektsContainerProps } from "./types"
 
 type DescriptionComponentProps = Partial<Record<'description' | 'technologies', string>>
-
 const DescriptionComponent: React.FC<DescriptionComponentProps> = ({
     description,
     technologies
 }) => {
-
     return <>
         {description} <br /> <br /> {technologies}
     </>

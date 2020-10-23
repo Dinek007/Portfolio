@@ -6,4 +6,4 @@ export type CommunicationContainerProps = {
     items?: ItemsData;
 }
 
-export type ItemsData = Record<"title" | "phone" | "mail" | "linkedin" | "facebook", string>
+export type ItemsData = Record<"title" | "phone" | "mail" | "linkedin" | "facebook", string>;

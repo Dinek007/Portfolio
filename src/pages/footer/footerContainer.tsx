@@ -1,7 +1,7 @@
 import React from "react"
 
 import { FooterComponent } from "./footerComponent"
-import { FooterContainerProps, ItemData } from "./types";
+import { FooterContainerProps, ItemData } from "./types"
 
 const itemData: ItemData = "Damian Wilk 2020"
 
