@@ -18,6 +18,10 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         color: palette.secondary.main,
         fontFamily: "Candara",
         fontSize: "58px",
+        [breakpoints.down('md')]: {
+            top: "170px",
+
+        },
     },
     list: {
         marginTop: "205px",
@@ -28,8 +32,13 @@ const useStyles = makeStyles(({ palette, breakpoints }) => createStyles({
         width: "80vw",
         marginLeft: "10vw",
         paddingBottom: "90px",
+        [breakpoints.down('md')]: {
+            marginTop: "360px",
+            paddingBottom: "200px",
+        },
         [breakpoints.down('sm')]: {
             marginLeft: "20vw",
+            marginTop: "300px",
             width: "60vw",
         },
     },
