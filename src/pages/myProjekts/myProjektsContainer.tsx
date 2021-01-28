@@ -36,13 +36,13 @@ const itemsData = {
             wwwLink: "https://poker-9cc0e.web.app/",
         },
         {
-            linkPicture: "../../../img/TodoListPic.png",
+            linkPicture: "../../../img/WorldOfNotesPic.png",
             description: <DescriptionComponent
-                description={"TODO LIST"}
-                technologies={"Used technologies: React, React Hooks, Redux, Material-Ui "}
+                description={"Cooperation in WORLD OF NOTES - online notebook app (in progress)"}
+                technologies={"Used technologies: React, Redux, Redux-Thunk, Material Ui, Lerna, Jest, Node Js, Netlify Functions, Fauna Db, Typescript, JWT Based Authentication "}
             />,
-            gitLink: "https://github.com/Dinek007/Todo-List",
-            wwwLink: "https://todo-list-76a23.web.app/",
+            gitLink: "https://github.com/meho99/worldOFNotesMonorepo",
+            wwwLink: "https://world-of-notes.netlify.app",
         },
         {
             linkPicture: "../../../img/PortfolioPic.png",
